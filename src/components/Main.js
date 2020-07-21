@@ -9,5 +9,6 @@ export const Main = (props) => (
     pt="8rem"
     px="1rem"
     {...props}
+    bg="red"
   />
 )
