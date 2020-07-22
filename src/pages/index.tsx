@@ -43,16 +43,15 @@ const Index = () => {
   const [recipes, setRecipes] = useState([]); 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-
+  const main_key= process.env.MAIN_KEY;
 
   const fetchRecipes = async (e) => {
     var fix = ""+bahan;
-    var linkfix = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${fix}&number=30&ranking=1&ignorePantry=true&apiKey=f0765ed2dda24d8d9dd8691366340d25`;
+    var linkfix = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${fix}&number=30&ranking=1&ignorePantry=true&apiKey=${main_key}`;
 
 
-    //api portal f0765ed2dda24d8d9dd8691366340d25
-    //api main 49a86e8fc50842fc9d6de7deb051f30b
-    console.log(""+bahan);
+    
+   
     
     e.preventDefault();
     setError(false);
