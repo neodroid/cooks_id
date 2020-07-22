@@ -132,7 +132,7 @@ export const AutoInput = (props) => {
 
   return (
     <Container  width="60%" justifyContent="center" alignItems="center" bg="#6B46C1">
-      <Box borderWidth="0px" borderColor="#2A69AC" rounded="md">
+     
       <Autosuggest 
         suggestions={suggestions.slice(0, 6)}
         onSuggestionsFetchRequested={onSuggestionsFetchRequested}
@@ -142,7 +142,7 @@ export const AutoInput = (props) => {
         inputProps={inputProps}
         onSuggestionSelected={onSuggestionSelected}
       />
-      </Box>
+     
       <Box >
       {
       ingredient.map(nilai=> 

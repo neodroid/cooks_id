@@ -117,7 +117,7 @@ export const CardResep = (props) => {
         </Box>
         <Box     mt="1">
         
-      <Button onClick={fetchRecipes} width="100%" borderWidth="2px" borderColor="white" >
+      <Button onClick={fetchRecipes} width="100%" borderWidth="2px" borderColor="white" bg="#6B46C1">
         letsgo!
       </Button>
    
@@ -128,11 +128,11 @@ export const CardResep = (props) => {
        
         <Modal isOpen={isOpen} onClose={onClose} isCentered size="xl"  >
           <ModalOverlay />
-          <ModalContent bg="#6B46C1">
+          <ModalContent bg="#6B46C1" color="white">
            
-          <ModalHeader bg="#6B46C1">{recipes.title}</ModalHeader>
+          <ModalHeader bg="#6B46C1" color="white">{recipes.title}</ModalHeader>
           <ModalCloseButton />
-          <Container justifyContent="center" alignItems="center" w="100%" bg="#6B46C1">
+          <Container justifyContent="center" alignItems="center" w="100%" bg="#6B46C1" color="white">
           <Image size="xs" src={recipes.image}  />
           <h1>{recipes.title}</h1>
           <h1 >
@@ -183,7 +183,7 @@ export const CardResep = (props) => {
             ) : (
               <ChakraLink href={recipes.sourceUrl} isExternal>
               <Button
-              
+             width="100%" borderWidth="2px" borderColor="white" bg="#6B46C1"
             
             >
               Click for instructions

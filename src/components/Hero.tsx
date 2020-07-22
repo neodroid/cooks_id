@@ -8,10 +8,10 @@ import  {Pilihan}  from './Pilihan'
 
 
 export const Hero = (props) => (
-  <Container justifyContent="center" alignItems="center" w="100%" height="300px" bg="#6B46C1" color="white">
-   <Heading fontSize="50px" mb={5}>cooks.id</Heading>
-   <Heading fontSize="25px" mb={5}>what's inside your fridge?</Heading>
-    <AutoInput array={props} />
+  <Container justifyContent="center" alignItems="center" w="100%" height="300px" bg="#6B46C1" >
+   <Heading fontSize="50px" color="white" mb={5}>cooks.id</Heading>
+   <Heading fontSize="25px" color="white" mb={5}>what's inside your fridge?</Heading>
+    <AutoInput  />
     
   </Container>
 )

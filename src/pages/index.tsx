@@ -106,7 +106,10 @@ const Index = () => {
     </Container>
     
     <Footer>
-      <Text>with ❤️ by kevinahmad</Text>
+      <Text>with ❤️ by .</Text>
+    <ChakraLink href="https://www.kems.xyz" isExternal>  
+      <Text as="u"> Kevinahmad</Text>
+      </ChakraLink>
     </Footer>
     
   </Container>
