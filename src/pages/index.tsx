@@ -17,6 +17,10 @@ import {
     ModalFooter,
     ModalBody,
     ModalCloseButton,
+    Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
   } from "@chakra-ui/core";
   
   import { Hero } from '../components/Hero'
@@ -78,6 +82,7 @@ const Index = () => {
 
   return (
     <Container>
+      
     <Hero />
     <Button  mt={5} variantColor="purple" onClick={fetchRecipes} >Find Recipes</Button>
     <Container 
